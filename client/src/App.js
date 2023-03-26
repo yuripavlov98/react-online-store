@@ -1,9 +1,13 @@
+import { BrowserRouter } from "react-router-dom";
+import AppRouter from "./components/AppRouter";
 
 
 function App() {
   return (
     <div>
-      <h1> o k </h1>
+      <BrowserRouter>
+        <AppRouter/>
+      </BrowserRouter>
     </div>
   );
 }
