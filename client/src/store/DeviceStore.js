@@ -12,6 +12,8 @@ export default class DeviceStore {
             {id: 1, name: 'Samsung'},
             {id: 2, name: 'Apple'},
             {id: 3, name: 'Xiaomi'},
+            {id: 4, name: 'Honor'},
+            {id: 5, name: 'Lenovo'},
         ]
         this._devices = [
             {id: 1, name: "12 pro", price: 49990, rating: 0, img: "9a56ba70-de47-47d9-a545-ba78e1206999.jpg"},
@@ -22,6 +24,7 @@ export default class DeviceStore {
             
         ]
         this._selectedType = {}
+        this._selectedBrand = {}
         makeAutoObservable(this)
     }
 
@@ -37,6 +40,9 @@ export default class DeviceStore {
     setSelectedType(type) {
         this._selectedType = type
     }
+    setSelectedBrand(brand) {
+        this._selectedBrand = brand
+    }
 
     get types() {
         return this._types
@@ -49,6 +55,9 @@ export default class DeviceStore {
     }
     get selectedType() {
         return this._selectedType
+    }
+    get selectedBrand() {
+        return this._selectedBrand
     }
 }
 

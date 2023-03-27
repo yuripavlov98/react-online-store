@@ -2,6 +2,8 @@ import React, { useContext } from 'react';
 import { observer } from 'mobx-react-lite';
 import { Context } from '../../index';
 import ListGroup from 'react-bootstrap/ListGroup';
+// import AllCollapseExample from './Accordion';
+
 
 const SideBar = observer(() => {
     const {device} = useContext(Context)
@@ -17,6 +19,7 @@ const SideBar = observer(() => {
                 </ListGroup.Item>    
             )}
         </ListGroup>
+        // AllCollapseExample()
     );
 });
 
