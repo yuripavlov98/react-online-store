@@ -17,7 +17,7 @@ const NavBar = observer(() => {
           {user.isAuth ?
             <Nav style={{color: 'white'}} className="ml-auto">
               <Button variant="outline-light">Войти</Button>
-              <Button style={{marginLeft: 20}} variant="outline-light">Админ панель</Button>
+              <Button className="ms-2" variant="outline-light">Админ панель</Button>
             </Nav>
             :
             <Nav style={{color: 'white'}} className="ml-auto">
