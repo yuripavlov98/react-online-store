@@ -7,7 +7,7 @@ import BrandBar from '../components/BrandBar/BrandBar';
 import DeviceList from '../components/DeviceList/DeviceList';
 import { observer } from 'mobx-react-lite';
 import { Context } from '../index';
-import { fetchBrands, fetchDevices, fetchOneDevice, fetchTypes } from '../http/deviceApi';
+import { fetchBrands, fetchDevices, fetchTypes } from '../http/deviceApi';
 
 
 const Shop = observer(() => {
